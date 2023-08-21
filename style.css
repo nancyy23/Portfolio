@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: rgb(0, 8, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62);
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: lavender;
+
+}
+
+.left {
+    font-size: 1.5rem;
+    justify-content: end;
+}
+
+
+@media (max-width: 1000px) {
+    nav ul {
+        display: none;
+        flex-direction: block;
+        position: absolute;
+        top: 80px;
+        background-color: #333;
+        text-align: right;
+        z-index: 1;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .right.active ul {
+        display: flex;
+    }
+
+    .left {
+        font-size: 1.3rem;
+        margin: 230px;
+    }
+}
+
+
+hr {
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 60px 84px;
+}
+
+.fab {
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+}
+
+.fa:hover {
+    opacity: 0.9;
+}
+
+
+
+/* Your existing CSS code */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Update the .firstSection to use CSS Grid */
+.firstSection {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 90px 20px 0 20px;
+
+}
+
+
+.firstSection>div {
+    width: 30%;
+}
+
+.leftSection {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.rightSection img {
+    max-width: 50%;
+    height: auto;
+    padding-left: 60px;
+    display: block;
+    padding-bottom: 40px;
+}
+
+.leftSection .buttons {
+    padding: 50px 0;
+}
+
+.leftSection .btn {
+    padding: 12px;
+    background: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .firstSection {
+        flex-direction: column;
+        display: block;
+        margin: 60px 0;
+        justify-content: center;
+    }
+
+    .firstSection>div {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .leftSection {
+        font-size: 1.5rem;
+    }
+
+    .leftSection .btn {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .rightSection {
+        display: none;
+        /* Hide the right section on small screens */
+    }
+}
+
+.purple {
+    color: rgb(170, 107, 228);
+}
+
+#element {
+    color: rgb(170, 107, 228);
+}
+
+/*------------------------------------------------------------------------ second -----------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------ second -----------------------------------------------------------------------------------*/
+
+.text-gray {
+    color: gray;
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+.secondSection h1 {
+    font-size: 1.9rem;
+}
+
+.secondSection .box {
+    background: white;
+    width: 77vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+
+.secondSection .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 16vw;
+}
+
+.image-top {
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+
+.vertical-title {
+    position: relative;
+    top: 75px;
+    width: 150px;
+    font-size: 14px;
+}
+
+.vertical-desc {
+    position: relative;
+    top: 86px;
+    color: rgba(245, 245, 245, 0.744);
+    width: 200px;
+    font-size: 11px;
+}
+
+
+
+/*---------------------------------------------------------------------------  -------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+.content-container8 {
+    display: flex;
+    align-items: stretch;
+    background-color: rgb(0, 8, 33);
+    padding-bottom: 40px;
+}
+
+.content-container7 {
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(0, 8, 33);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.content-container6 {
+    flex: 0.5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.grid-container>div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.grid-container>div img {
+    max-width: 100px;
+    height: auto;
+    align-items: center;
+    padding: 20px;
+}
+
+.grid-container>div p {
+    flex: 1;
+    margin: 0;
+    padding: 20px;
+    font-size: 14px;
+}
+
+
+.content-container7 h1 {
+    color: white;
+    font-weight: 800;
+}
+
+.content-container7 p {
+
+    padding-top: 20px;
+}
+
+
+
+.image-right {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+    .content-container7 {
+        padding: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .grid-container>div img {
+        max-height: 50px;
+    }
+
+    .content-container7 p,
+    .grid-container>div p {
+        font-size: 11px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .content-container7 p,
+    .grid-container>div p {
+        font-size: 10px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+.container {
+    margin: 0 auto;
+    padding: 15px;
+    background-color: rgb(18, 18, 62);
+    border-radius: 30px;
+    width: 90%;
+    text-align: center;
+
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0.004em;
+    overflow: auto;
+}
+
+.row {
+    display: flex;
+    max-width: 100%;
+}
+
+.col {
+    flex: 1;
+    box-sizing: border-box;
+    border-right: 1px solid grey;
+    padding: 0 4% 0 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(50% - 10px);
+    overflow: hidden;
+}
+
+.order-1 {
+    order: 2;
+}
+
+.order-2 {
+    order: 3;
+    border-right: none;
+}
+
+.order-4 {
+    order: 1;
+}
+
+/* Add responsive adjustments here */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+        font-size: 14px;
+        line-height: 3px;
+        letter-spacing: 0.003em;
+    }
+
+    .col {
+        flex-basis: 100%;
+        width: 100%;
+        padding: 0 20px 0 20px;
+    }
+
+    .container p {
+        font-size: 10px;
+        line-height: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.project {
+    text-align: center;
+    /* Center the "Education" heading */
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center the two containers horizontally */
+}
+
+
+
+.box2 {
+
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 0 120px 0 120px;
+}
+
+
+
+.box2-container1,
+.box2-container2 {
+    flex: 1;
+    padding: 20px;
+    margin: 30px;
+}
+
+
+.box2-img1 img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 6%;
+    height: auto;
+}
+
+
+.text1,
+.text2 {
+    margin: 10px 0;
+    text-align: left;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+
+
+    .box2{
+        flex-direction: column; 
+    }
+
+    .box2-container1,
+    .box2-container2 {
+        flex: 1;
+        padding: 15px;
+        margin: 15px 0;
+
+    }
+
+}
+
+
+/*--------------------------------------------------------------------------- footer -------------------------------------------------------------------------------------------------*/
+
+
+footer {
+    background-color: #0e0e1a;
+    padding: 20px 0;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+
+.footer>div {
+    width: 100%;
+    max-width: 223px;
+    margin: 10px 0;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.footer h3 {
+    text-align: center;
+}
+
+.footer-rights {
+    text-align: center;
+    color: gray;
+    padding: 12px 0;
+}
+
+@media screen and (min-width: 700px) {
+    .footer {
+        padding: 23px 122px;
+    }
+}
